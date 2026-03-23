@@ -1,0 +1,8 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.associations": {
+    "*.robot": "robotframework",
+    "*.resource": "robotframework"
+  }
+}

@@ -1,0 +1,706 @@
+2026-03-22 14:05:31:099 [Appium] Welcome to Appium v2.13.0 (REV 4135badeddc3899aa2e89d3ea1caee320c55d299)
+2026-03-22 14:05:31:101 [Appium] Non-default server args:
+2026-03-22 14:05:31:102 [Appium] { port: 4753, sessionOverride: true }
+2026-03-22 14:05:31:102 [Appium] The autodetected Appium home path: /Users/weibin/.appium
+2026-03-22 14:05:31:103 [Appium] Attempting to load driver uiautomator2...
+2026-03-22 14:05:31:105 [Appium] Attempting to load driver xcuitest...
+2026-03-22 14:05:31:107 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:31:110 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-xcuitest-driver/build/index.js
+2026-03-22 14:05:31:655 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.551s
+2026-03-22 14:05:32:298 [Appium] XCUITestDriver has been successfully loaded in 1.194s
+2026-03-22 14:05:32:311 [Appium] Appium REST http interface listener started on http://0.0.0.0:4753
+2026-03-22 14:05:32:311 [Appium] You can provide the following URLs in your client code to connect to this server:
+	http://127.0.0.1:4753/ (only accessible from the same host)
+	http://192.168.1.99:4753/
+2026-03-22 14:05:32:312 [Appium] Available drivers:
+2026-03-22 14:05:32:312 [Appium]   - uiautomator2@3.9.1 (automationName 'UiAutomator2')
+2026-03-22 14:05:32:312 [Appium]   - xcuitest@7.34.1 (automationName 'XCUITest')
+2026-03-22 14:05:32:312 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2026-03-22 14:05:50:587 [HTTP] Request idempotency key: 6827fd54-4bed-45bf-a5d0-bdaa623d93c8
+2026-03-22 14:05:50:599 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:50:600 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:50:601 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188350601 (16:05:50 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:50:603 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:50:603 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:50:603 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:50:604 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:50:604 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:50:604 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:50:604 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:50:604 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:50:604 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:50:607 [38;5;-104m[AndroidUiautomator2Driver@eb33] 
+2026-03-22 14:05:50:607 [38;5;-104m[AndroidUiautomator2Driver@eb33] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:50:608 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:50:609 [38;5;-104m[AndroidUiautomator2Driver@eb33] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:50:610 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Session created with session id: b2bfb9b1-8935-481d-aa69-1f411ff7b85f
+2026-03-22 14:05:50:616 [b2bfb9b1][ADB] Found 1 'build-tools' folders under '/Users/weibin/Library/Android/sdk' (newest first):
+2026-03-22 14:05:50:616 [b2bfb9b1][ADB]     /Users/weibin/Library/Android/sdk/build-tools/35.0.0
+2026-03-22 14:05:50:616 [b2bfb9b1][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:50:616 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:50:637 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Retrieving device list
+2026-03-22 14:05:50:637 [b2bfb9b1][ADB] Trying to find connected Android devices
+2026-03-22 14:05:50:638 [b2bfb9b1][ADB] Getting connected devices
+2026-03-22 14:05:50:659 [b2bfb9b1][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:50:659 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Using device: emulator-5554
+2026-03-22 14:05:50:660 [b2bfb9b1][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:50:660 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:50:672 [b2bfb9b1][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:50:672 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:50:673 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:50:703 [b2bfb9b1][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:50:703 [b2bfb9b1][ADB] Getting device platform version
+2026-03-22 14:05:50:703 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:50:723 [b2bfb9b1][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:50:723 [b2bfb9b1][ADB] Device API level: 36
+2026-03-22 14:05:50:723 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Relaxing hidden api policy
+2026-03-22 14:05:50:723 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:50:724 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] No app sent in, not parsing package/activity
+2026-03-22 14:05:50:724 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:50:737 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:50:755 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Pushing settings apk to the device...
+2026-03-22 14:05:50:755 [b2bfb9b1][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:50:756 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:50:788 [b2bfb9b1][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:50:788 [b2bfb9b1][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:50:814 [b2bfb9b1][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:50:814 [b2bfb9b1][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:50:814 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:50:843 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd notification allow_listener io.appium.settings/.NLService'
+2026-03-22 14:05:50:843 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings PROJECT_MEDIA allow'
+2026-03-22 14:05:50:881 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:50:902 [b2bfb9b1][SettingsApp] Starting Appium Settings app
+2026-03-22 14:05:50:903 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start-activity -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+2026-03-22 14:05:51:016 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:51:369 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:51:723 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:51:794 [b2bfb9b1][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:51:795 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:51:795 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Enabling Unicode keyboard support
+2026-03-22 14:05:51:796 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:51:905 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:51:905 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:51:906 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:51:975 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:52:025 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:52:028 [b2bfb9b1][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:52:028 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:52:050 [b2bfb9b1][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:52:050 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:52:052 [b2bfb9b1][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:52:053 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] No app capability. Assuming it is already on the device
+2026-03-22 14:05:52:053 [b2bfb9b1][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:52:053 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:52:053 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:52:145 [b2bfb9b1][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:52:146 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Deleting UiAutomator2 session
+2026-03-22 14:05:52:146 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Deleting UiAutomator2 server session
+2026-03-22 14:05:52:148 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:52:148 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:52:148 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:52:151 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:52:166 [b2bfb9b1][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:52:193 [b2bfb9b1][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:52:209 [b2bfb9b1][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:52:209 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:52:226 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:52:226 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:52:248 [b2bfb9b1][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:52:248 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:52:248 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Server packages are not going to be (re)installed
+2026-03-22 14:05:52:248 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:52:248 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:52:279 [b2bfb9b1][Logcat] Stopping logcat capture
+2026-03-22 14:05:52:280 [b2bfb9b1][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188352280 (16:05:52 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:52:293 [b2bfb9b1][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:52:307 [b2bfb9b1][HTTP] <-- POST /session 500 1707 ms - 796 
+2026-03-22 14:05:52:308 [b2bfb9b1][38;5;-104m[AndroidUiautomator2Driver@eb33] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:52:309 [b2bfb9b1][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:52:309 [b2bfb9b1][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:52:309 [b2bfb9b1][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:52:326 [HTTP] Request idempotency key: f5697b5a-96f1-40a9-bfb1-d0f64a9a9979
+2026-03-22 14:05:52:327 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:52:327 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:52:327 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188352327 (16:05:52 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:52:328 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:52:328 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:52:328 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:52:329 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:52:329 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:52:329 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:52:329 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:52:329 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:52:329 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:52:330 [38;5;-27m[AndroidUiautomator2Driver@aac3] 
+2026-03-22 14:05:52:330 [38;5;-27m[AndroidUiautomator2Driver@aac3] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:52:332 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:52:333 [38;5;-27m[AndroidUiautomator2Driver@aac3] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:52:340 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Session created with session id: 38acc66f-0684-4ffa-b71e-1eff6d5c4f5a
+2026-03-22 14:05:52:344 [38acc66f][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:52:345 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:52:364 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Retrieving device list
+2026-03-22 14:05:52:364 [38acc66f][ADB] Trying to find connected Android devices
+2026-03-22 14:05:52:364 [38acc66f][ADB] Getting connected devices
+2026-03-22 14:05:52:381 [38acc66f][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:52:381 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Using device: emulator-5554
+2026-03-22 14:05:52:382 [38acc66f][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:52:382 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:52:396 [38acc66f][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:52:396 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:52:396 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:52:415 [38acc66f][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:52:415 [38acc66f][ADB] Getting device platform version
+2026-03-22 14:05:52:415 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:52:434 [38acc66f][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:52:435 [38acc66f][ADB] Device API level: 36
+2026-03-22 14:05:52:435 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Relaxing hidden api policy
+2026-03-22 14:05:52:435 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:52:435 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] No app sent in, not parsing package/activity
+2026-03-22 14:05:52:435 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:52:452 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:52:474 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Pushing settings apk to the device...
+2026-03-22 14:05:52:474 [38acc66f][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:52:474 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:52:517 [38acc66f][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:52:517 [38acc66f][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:52:532 [38acc66f][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:52:532 [38acc66f][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:52:532 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:52:559 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] io.appium.settings is already running. There is no need to reset its permissions.
+2026-03-22 14:05:52:560 [38acc66f][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:52:562 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:52:562 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Enabling Unicode keyboard support
+2026-03-22 14:05:52:562 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:52:607 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:52:607 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:52:607 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:52:647 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:52:678 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:52:679 [38acc66f][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:52:679 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:52:693 [38acc66f][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:52:693 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:52:693 [38acc66f][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:52:693 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] No app capability. Assuming it is already on the device
+2026-03-22 14:05:52:693 [38acc66f][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:52:694 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:52:694 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:52:730 [38acc66f][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:52:732 [38acc66f][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:52:732 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Deleting UiAutomator2 session
+2026-03-22 14:05:52:732 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Deleting UiAutomator2 server session
+2026-03-22 14:05:52:732 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:52:733 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:52:733 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:52:734 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:52:735 [38acc66f][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:52:770 [38acc66f][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:52:771 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:52:771 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Server packages are not going to be (re)installed
+2026-03-22 14:05:52:772 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:52:772 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:52:804 [38acc66f][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:52:804 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:52:851 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:52:851 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:52:854 [38acc66f][38;5;-27m[AndroidUiautomator2Driver@aac3] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:52:855 [38acc66f][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:52:856 [38acc66f][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:52:856 [38acc66f][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:52:907 [38acc66f][Logcat] Stopping logcat capture
+2026-03-22 14:05:52:908 [38acc66f][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188352908 (16:05:52 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:52:908 [38acc66f][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:52:909 [38acc66f][HTTP] <-- POST /session 500 582 ms - 796 
+2026-03-22 14:05:52:921 [HTTP] Request idempotency key: 34b332d4-9d1f-499e-9ec9-c5f50566998b
+2026-03-22 14:05:52:922 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:52:922 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:52:922 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188352922 (16:05:52 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:52:922 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:52:922 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:52:922 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:52:923 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:52:923 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:52:923 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:52:923 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:52:923 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:52:923 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:52:924 [38;5;-141m[AndroidUiautomator2Driver@be1f] 
+2026-03-22 14:05:52:924 [38;5;-141m[AndroidUiautomator2Driver@be1f] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:52:924 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:52:925 [38;5;-141m[AndroidUiautomator2Driver@be1f] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:52:925 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Session created with session id: df482739-79fc-4a95-8cfc-fb5c2f4ec488
+2026-03-22 14:05:52:925 [df482739][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:52:926 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:52:938 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Retrieving device list
+2026-03-22 14:05:52:938 [df482739][ADB] Trying to find connected Android devices
+2026-03-22 14:05:52:938 [df482739][ADB] Getting connected devices
+2026-03-22 14:05:52:951 [df482739][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:52:951 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Using device: emulator-5554
+2026-03-22 14:05:52:952 [df482739][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:52:952 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:52:964 [df482739][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:52:964 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:52:964 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:52:983 [df482739][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:52:983 [df482739][ADB] Getting device platform version
+2026-03-22 14:05:52:983 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:53:006 [df482739][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:53:006 [df482739][ADB] Device API level: 36
+2026-03-22 14:05:53:006 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Relaxing hidden api policy
+2026-03-22 14:05:53:006 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:53:007 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] No app sent in, not parsing package/activity
+2026-03-22 14:05:53:007 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:53:024 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:53:044 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Pushing settings apk to the device...
+2026-03-22 14:05:53:044 [df482739][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:53:044 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:53:075 [df482739][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:53:075 [df482739][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:53:089 [df482739][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:53:089 [df482739][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:53:089 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:53:111 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] io.appium.settings is already running. There is no need to reset its permissions.
+2026-03-22 14:05:53:111 [df482739][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:53:112 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:53:112 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Enabling Unicode keyboard support
+2026-03-22 14:05:53:112 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:53:147 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:53:147 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:147 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:218 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:256 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:53:256 [df482739][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:53:256 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:53:273 [df482739][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:53:273 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:53:274 [df482739][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:53:274 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] No app capability. Assuming it is already on the device
+2026-03-22 14:05:53:274 [df482739][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:53:274 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:53:275 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:53:313 [df482739][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:53:314 [df482739][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:53:314 [df482739][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:53:314 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Deleting UiAutomator2 session
+2026-03-22 14:05:53:314 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Deleting UiAutomator2 server session
+2026-03-22 14:05:53:314 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:53:314 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:53:314 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:53:315 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:53:336 [df482739][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:53:336 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:53:336 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Server packages are not going to be (re)installed
+2026-03-22 14:05:53:336 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:53:336 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:53:349 [df482739][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:53:349 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:53:365 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:53:365 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:53:368 [df482739][38;5;-141m[AndroidUiautomator2Driver@be1f] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:53:368 [df482739][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:53:368 [df482739][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:53:368 [df482739][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:53:413 [df482739][Logcat] Stopping logcat capture
+2026-03-22 14:05:53:414 [df482739][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188353414 (16:05:53 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:53:414 [df482739][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:53:415 [df482739][HTTP] <-- POST /session 500 493 ms - 796 
+2026-03-22 14:05:53:426 [HTTP] Request idempotency key: 26741154-99af-4d60-b5d9-2558c4ca2216
+2026-03-22 14:05:53:426 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:53:426 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:53:426 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188353426 (16:05:53 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:53:427 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:53:427 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:53:427 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:53:427 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:53:427 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:53:427 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:53:427 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:53:427 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:53:427 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:53:428 [38;5;-176m[AndroidUiautomator2Driver@f1ac] 
+2026-03-22 14:05:53:428 [38;5;-176m[AndroidUiautomator2Driver@f1ac] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:53:428 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:53:429 [38;5;-176m[AndroidUiautomator2Driver@f1ac] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:53:429 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Session created with session id: bfca9624-84d2-4e4a-a723-ac021e033768
+2026-03-22 14:05:53:430 [bfca9624][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:53:430 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:53:446 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Retrieving device list
+2026-03-22 14:05:53:446 [bfca9624][ADB] Trying to find connected Android devices
+2026-03-22 14:05:53:446 [bfca9624][ADB] Getting connected devices
+2026-03-22 14:05:53:470 [bfca9624][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:53:470 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Using device: emulator-5554
+2026-03-22 14:05:53:470 [bfca9624][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:53:470 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:53:484 [bfca9624][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:53:484 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:53:484 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:53:506 [bfca9624][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:53:506 [bfca9624][ADB] Getting device platform version
+2026-03-22 14:05:53:506 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:53:525 [bfca9624][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:53:525 [bfca9624][ADB] Device API level: 36
+2026-03-22 14:05:53:525 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Relaxing hidden api policy
+2026-03-22 14:05:53:525 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:53:526 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] No app sent in, not parsing package/activity
+2026-03-22 14:05:53:526 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:53:540 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:53:557 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Pushing settings apk to the device...
+2026-03-22 14:05:53:557 [bfca9624][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:53:558 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:53:583 [bfca9624][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:53:583 [bfca9624][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:53:596 [bfca9624][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:53:596 [bfca9624][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:53:596 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:53:618 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] io.appium.settings is already running. There is no need to reset its permissions.
+2026-03-22 14:05:53:618 [bfca9624][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:53:619 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:53:619 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Enabling Unicode keyboard support
+2026-03-22 14:05:53:619 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:53:649 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:53:649 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:649 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:688 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:53:729 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:53:729 [bfca9624][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:53:730 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:53:751 [bfca9624][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:53:751 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:53:753 [bfca9624][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:53:753 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] No app capability. Assuming it is already on the device
+2026-03-22 14:05:53:753 [bfca9624][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:53:753 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:53:755 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:53:798 [bfca9624][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:53:801 [bfca9624][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:53:808 [bfca9624][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:53:808 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Deleting UiAutomator2 session
+2026-03-22 14:05:53:808 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Deleting UiAutomator2 server session
+2026-03-22 14:05:53:808 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:53:808 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:53:808 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:53:809 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:53:818 [bfca9624][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:53:818 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:53:818 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Server packages are not going to be (re)installed
+2026-03-22 14:05:53:819 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:53:819 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:53:836 [bfca9624][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:53:836 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:53:845 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:53:845 [bfca9624][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:53:845 [bfca9624][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:53:845 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:53:849 [bfca9624][38;5;-176m[AndroidUiautomator2Driver@f1ac] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:53:850 [bfca9624][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:53:895 [bfca9624][Logcat] Stopping logcat capture
+2026-03-22 14:05:53:896 [bfca9624][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188353896 (16:05:53 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:53:896 [bfca9624][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:53:897 [bfca9624][HTTP] <-- POST /session 500 470 ms - 796 
+2026-03-22 14:05:53:907 [HTTP] Request idempotency key: 202441ab-c2a1-49a1-9731-ea98ce4ddcc2
+2026-03-22 14:05:53:908 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:53:908 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:53:908 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188353908 (16:05:53 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:53:909 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:53:909 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:53:909 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:53:909 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:53:909 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:53:909 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:53:909 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:53:909 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:53:909 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:53:910 [38;5;-81m[AndroidUiautomator2Driver@b707] 
+2026-03-22 14:05:53:910 [38;5;-81m[AndroidUiautomator2Driver@b707] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:53:911 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:53:911 [38;5;-81m[AndroidUiautomator2Driver@b707] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:53:911 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Session created with session id: c97a98e0-0b08-41e4-947a-39fb36179c01
+2026-03-22 14:05:53:912 [c97a98e0][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:53:912 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:53:926 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Retrieving device list
+2026-03-22 14:05:53:926 [c97a98e0][ADB] Trying to find connected Android devices
+2026-03-22 14:05:53:926 [c97a98e0][ADB] Getting connected devices
+2026-03-22 14:05:53:942 [c97a98e0][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:53:943 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Using device: emulator-5554
+2026-03-22 14:05:53:943 [c97a98e0][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:53:943 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:53:958 [c97a98e0][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:53:958 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:53:958 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:53:979 [c97a98e0][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:53:979 [c97a98e0][ADB] Getting device platform version
+2026-03-22 14:05:53:979 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:53:998 [c97a98e0][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:53:998 [c97a98e0][ADB] Device API level: 36
+2026-03-22 14:05:53:998 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Relaxing hidden api policy
+2026-03-22 14:05:53:998 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:53:999 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] No app sent in, not parsing package/activity
+2026-03-22 14:05:53:999 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:54:011 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:54:029 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Pushing settings apk to the device...
+2026-03-22 14:05:54:029 [c97a98e0][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:54:029 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:54:056 [c97a98e0][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:54:056 [c97a98e0][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:54:070 [c97a98e0][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:54:070 [c97a98e0][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:54:070 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:54:092 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] io.appium.settings is already running. There is no need to reset its permissions.
+2026-03-22 14:05:54:092 [c97a98e0][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:54:092 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:54:092 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Enabling Unicode keyboard support
+2026-03-22 14:05:54:093 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:54:118 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:54:118 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:118 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:151 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:182 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:54:182 [c97a98e0][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:54:182 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:54:196 [c97a98e0][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:54:196 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:54:197 [c97a98e0][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:54:197 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] No app capability. Assuming it is already on the device
+2026-03-22 14:05:54:197 [c97a98e0][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:54:197 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:54:197 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:54:231 [c97a98e0][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:54:236 [c97a98e0][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:54:236 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Deleting UiAutomator2 session
+2026-03-22 14:05:54:236 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Deleting UiAutomator2 server session
+2026-03-22 14:05:54:236 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:54:237 [c97a98e0][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:54:237 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:54:237 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:54:237 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:54:251 [c97a98e0][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:54:251 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:54:251 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Server packages are not going to be (re)installed
+2026-03-22 14:05:54:252 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:54:252 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:54:275 [c97a98e0][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:54:275 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:54:284 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:54:284 [c97a98e0][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:54:284 [c97a98e0][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:54:284 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:54:289 [c97a98e0][38;5;-81m[AndroidUiautomator2Driver@b707] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:54:290 [c97a98e0][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:54:345 [c97a98e0][Logcat] Stopping logcat capture
+2026-03-22 14:05:54:346 [c97a98e0][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188354346 (16:05:54 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:54:346 [c97a98e0][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:54:347 [c97a98e0][HTTP] <-- POST /session 500 439 ms - 796 
+2026-03-22 14:05:54:357 [HTTP] Request idempotency key: edc17613-7666-4177-b3e5-9a02cf61e797
+2026-03-22 14:05:54:357 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}}
+2026-03-22 14:05:54:357 [AppiumDriver@a0f2] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:appActivity":".DefaultIcon","appium:appPackage":"org.wikipedia","appium:automationName":"uiAutomator2","appium:deviceName":"Pixel_9","appium:noSign":true,"platformName":"Android","appium:platformVersion":"16.0","appium:systemPort":8203,"appium:udid":"emulator-5554","appium:unicodeKeyboard":true,"appium:adbExecTimeout":"40000","appium:newCommandTimeout":240}}]
+2026-03-22 14:05:54:357 [AppiumDriver@a0f2] Event 'newSessionRequested' logged at 1774188354357 (16:05:54 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:54:358 [Appium] Attempting to find matching driver for automationName 'uiAutomator2' and platformName 'Android'
+2026-03-22 14:05:54:358 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-03-22 14:05:54:358 [Appium] Will require it at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver
+2026-03-22 14:05:54:358 [Appium] Requiring driver at /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2026-03-22 14:05:54:358 [AppiumDriver@a0f2] Appium v2.13.0 creating new AndroidUiautomator2Driver (v3.9.1) session
+2026-03-22 14:05:54:358 [AppiumDriver@a0f2] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-03-22 14:05:54:358 [AppiumDriver@a0f2] Appium's BaseDriver version is 9.13.0
+2026-03-22 14:05:54:358 [AppiumDriver@a0f2] AndroidUiautomator2Driver's BaseDriver version is 9.13.0
+2026-03-22 14:05:54:358 [AppiumDriver@a0f2] There are no active sessions for cleanup
+2026-03-22 14:05:54:358 [38;5;-54m[AndroidUiautomator2Driver@0241] 
+2026-03-22 14:05:54:358 [38;5;-54m[AndroidUiautomator2Driver@0241] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "Android",
+    "appium:appActivity": ".DefaultIcon",
+    "appium:appPackage": "org.wikipedia",
+    "appium:automationName": "uiAutomator2",
+    "appium:deviceName": "Pixel_9",
+    "appium:noSign": true,
+    "appium:platformVersion": "16.0",
+    "appium:systemPort": 8203,
+    "appium:udid": "emulator-5554",
+    "appium:unicodeKeyboard": true,
+    "appium:adbExecTimeout": "40000",
+    "appium:newCommandTimeout": 240
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2026-03-22 14:05:54:359 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2026-03-22 14:05:54:359 [38;5;-54m[AndroidUiautomator2Driver@0241] Capability 'adbExecTimeout' changed from string ('40000') to integer (40000). This may cause unexpected behavior
+2026-03-22 14:05:54:359 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Session created with session id: c9b8afdf-a522-46c6-929a-ddd652e6293a
+2026-03-22 14:05:54:360 [c9b8afdf][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:54:360 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:54:373 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Retrieving device list
+2026-03-22 14:05:54:373 [c9b8afdf][ADB] Trying to find connected Android devices
+2026-03-22 14:05:54:373 [c9b8afdf][ADB] Getting connected devices
+2026-03-22 14:05:54:386 [c9b8afdf][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2026-03-22 14:05:54:386 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Using device: emulator-5554
+2026-03-22 14:05:54:386 [c9b8afdf][ADB] Using 'adb' from '/Users/weibin/Library/Android/sdk/platform-tools/adb'
+2026-03-22 14:05:54:386 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2026-03-22 14:05:54:399 [c9b8afdf][ADB] Setting device id to emulator-5554
+2026-03-22 14:05:54:399 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Starting 'org.wikipedia' directly on the device
+2026-03-22 14:05:54:399 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2026-03-22 14:05:54:420 [c9b8afdf][ADB] Current device property 'ro.build.version.sdk': 36
+2026-03-22 14:05:54:420 [c9b8afdf][ADB] Getting device platform version
+2026-03-22 14:05:54:420 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2026-03-22 14:05:54:440 [c9b8afdf][ADB] Current device property 'ro.build.version.release': 16
+2026-03-22 14:05:54:440 [c9b8afdf][ADB] Device API level: 36
+2026-03-22 14:05:54:440 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Relaxing hidden api policy
+2026-03-22 14:05:54:440 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2026-03-22 14:05:54:441 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] No app sent in, not parsing package/activity
+2026-03-22 14:05:54:441 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2026-03-22 14:05:54:454 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2026-03-22 14:05:54:474 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Pushing settings apk to the device...
+2026-03-22 14:05:54:474 [c9b8afdf][ADB] Getting package info for 'io.appium.settings'
+2026-03-22 14:05:54:474 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2026-03-22 14:05:54:499 [c9b8afdf][ADB] Using 'aapt2' from '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2026-03-22 14:05:54:499 [c9b8afdf][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:54:512 [c9b8afdf][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.12.17' >= '5.12.17')
+2026-03-22 14:05:54:512 [c9b8afdf][ADB] There is no need to install/upgrade '/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2026-03-22 14:05:54:512 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2026-03-22 14:05:54:534 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] io.appium.settings is already running. There is no need to reset its permissions.
+2026-03-22 14:05:54:534 [c9b8afdf][Logcat] Starting logs capture with command: /Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2026-03-22 14:05:54:534 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] The 'unicodeKeyboard' capability has been deprecated and will be removed. Set the 'hideKeyboard' capability to 'true' in order to make the on-screen keyboard invisible.
+2026-03-22 14:05:54:534 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Enabling Unicode keyboard support
+2026-03-22 14:05:54:534 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+2026-03-22 14:05:54:562 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Unsetting previous IME io.appium.settings/.UnicodeIME
+2026-03-22 14:05:54:562 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Setting IME to 'io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:562 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:588 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+2026-03-22 14:05:54:624 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Forwarding UiAutomator2 Server port 6790 to local port 8203
+2026-03-22 14:05:54:624 [c9b8afdf][ADB] Forwarding system: 8203 to device: 6790
+2026-03-22 14:05:54:624 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8203 tcp:6790'
+2026-03-22 14:05:54:639 [c9b8afdf][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2026-03-22 14:05:54:639 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2026-03-22 14:05:54:640 [c9b8afdf][ADB] Getting install status for io.appium.uiautomator2.server.test
+2026-03-22 14:05:54:640 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] No app capability. Assuming it is already on the device
+2026-03-22 14:05:54:640 [c9b8afdf][ADB] Getting install status for org.wikipedia
+2026-03-22 14:05:54:640 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:54:640 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2026-03-22 14:05:54:672 [c9b8afdf][ADB] 'io.appium.uiautomator2.server.test' is installed
+2026-03-22 14:05:54:673 [c9b8afdf][ADB] 'org.wikipedia' is not installed
+2026-03-22 14:05:54:673 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Deleting UiAutomator2 session
+2026-03-22 14:05:54:673 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Deleting UiAutomator2 server session
+2026-03-22 14:05:54:673 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Matched '/' to command name 'deleteSession'
+2026-03-22 14:05:54:673 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2026-03-22 14:05:54:673 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2026-03-22 14:05:54:674 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop org.wikipedia'
+2026-03-22 14:05:54:674 [c9b8afdf][ADB] Reading package manifest: '/Users/weibin/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk'
+2026-03-22 14:05:54:693 [c9b8afdf][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.1.5' >= '7.1.5')
+2026-03-22 14:05:54:694 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.5.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2026-03-22 14:05:54:694 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Server packages are not going to be (re)installed
+2026-03-22 14:05:54:694 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Waiting up to 30000ms for services to be available
+2026-03-22 14:05:54:694 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2026-03-22 14:05:54:703 [c9b8afdf][ADB] Removing forwarded port socket connection: 8203 
+2026-03-22 14:05:54:703 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8203'
+2026-03-22 14:05:54:716 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Restoring hidden api policy to the device default configuration
+2026-03-22 14:05:54:716 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2026-03-22 14:05:54:719 [c9b8afdf][38;5;-54m[AndroidUiautomator2Driver@0241] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2026-03-22 14:05:54:720 [c9b8afdf][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-03-22 14:05:54:720 [c9b8afdf][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2026-03-22 14:05:54:720 [c9b8afdf][ADB] Running '/Users/weibin/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2026-03-22 14:05:54:776 [c9b8afdf][Logcat] Stopping logcat capture
+2026-03-22 14:05:54:777 [c9b8afdf][AppiumDriver@a0f2] Event 'newSessionStarted' logged at 1774188354777 (16:05:54 GMT+0200 (Eastern European Standard Time))
+2026-03-22 14:05:54:777 [c9b8afdf][AppiumDriver@a0f2] Encountered internal error running command: Error: Either provide 'app' option to install 'org.wikipedia' or consider setting 'noReset' to 'true' if 'org.wikipedia' is supposed to be preinstalled.
+    at AndroidUiautomator2Driver.resetAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/app-management.js:372:11)
+    at AndroidUiautomator2Driver.initAUT (/Users/weibin/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:794:9)
+2026-03-22 14:05:54:777 [c9b8afdf][HTTP] <-- POST /session 500 420 ms - 796 
+2026-03-22 14:05:54:917 [Appium] Received SIGTERM - shutting down
